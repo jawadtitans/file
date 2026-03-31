@@ -1,0 +1,81 @@
+name: quran_app
+description: "Hedaya"
+publish_to: 'none'
+
+version: 1.0.1+4
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.0.5
+  flutter_launcher_icons: ^0.13.1
+  flutter_riverpod: ^3.2.1
+  animated_text_kit: ^4.2.2
+  path_provider: ^2.1.3
+  lottie: ^3.1.0
+  hugeicons: ^1.1.5
+  page_flip: ^0.2.5+1
+  dotlottie_loader: ^0.0.4
+  flutter_animate: ^4.5.2
+  animate_do: ^4.2.0
+  shimmer: ^3.0.0
+  geolocator: ^14.0.2
+  permission_handler: ^11.3.1
+  flutter_svg: ^2.0.10
+  hijri: ^3.0.0
+  shamsi_date: ^1.0.1
+  flutter_lints: ^6.0.0
+  iconsax_flutter: ^1.0.1
+  shared_preferences: ^2.2.2
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/webp/
+    - assets/fonts/
+    - assets/json/
+  fonts:
+    - family: Arabic
+      fonts:
+        - asset: assets/fonts/Arabic.ttf
+
+    - family: new_time
+      fonts:
+        - asset: assets/fonts/InriaSerif-Bold.ttf
+
+    - family: Quran
+      fonts:
+        - asset: assets/fonts/quran.ttf
+# Launcher icons configuration (TOP LEVEL)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/webp/playstore.png"
+
+# Native splash configuration (TOP LEVEL)
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/webp/playstore.png
+  android:  true
+  ios: true
+  android_12:
+    image: assets/webp/android_12.png
+    color: "#ffffff"
+  web:
+    false
+
+# Localization (if used)
+flutter_intl:
+  enabled: true
+
+
